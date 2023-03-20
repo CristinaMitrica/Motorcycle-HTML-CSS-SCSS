@@ -5,77 +5,92 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Página inicio motorcicle</title>
+        <link rel="stylesheet" href="src/scss/app.css">
     </head>
     <body>
         <header class="header">
-            <a href="#">
-                <span role="img" aria-label="Logo de motorcicle website. Haz click para volver a al página inicio."></span>
-            </a> 
-            <ul>
-                <li> 
-                    <a href="#">Button Text</a> 
+            <div class="header__logo header-logo">
+                <a class="header-logo__a" href="#" >
+                    <span class="header-logo__span" role="img" aria-label="Logo de motorcicle website"></span>
+                    <span class="header-logo__hide-accessibilit">Haz click para ir a la página de inicio</span>
+                </a> 
+            </div>
+            <ul class="header__navegacion header-navegacion">
+                <li class="header-navegacion__li header-motos"> 
+                    <a class="header-motos__a" href="#">Ver todas las motos</a> 
                 </li>
-                <li> 
-                    <button> 
-                        <span></span> 
-                        Usuario
-                    </button> 
+                <li class="header-navegacion__li header-usuario"> 
+                    <button class="header-usuario__btn"> 
+                        <span class="header-usuario__span">
+                        </span> 
+                    Usuario 
+                    </button>
                 </li>
-                <li> 
-                    <button>
-                        <span></span>
+                <li class="header-navegacion__li header-menu"> 
+                    <button class="header-menu__btn">
+                        <span class="heder-menu__span" role="img" aria-label="Menú Hamburguesa"></span>
+                        <span class="header-menu__hide-accessibility">Haz click para abrir el menú hamburguesa</span>
+                        <!-- en css la clase hide-accessibility se pone display:none -->                      
                     </button> 
                 </li>
             </ul>
         </header>
-        <main>
-            <h1>Todas Las motos</h1>
-            <ul>
-                <li> <button>Eléctrica</button> </li>
-                <li> <button>Automática</button> </li>
-                <li> <button>Gasolina</button> </li>
-                <li> <button>Diesel</button> </li>
+        <main class="main">
+            <h1 class="main__h1">Todas Las motos</h1>
+            <ul class="main__ul main-moto">
+                <li class="main-moto__li"> <button class="main-moto__btn">Eléctrica</button> </li>
+                <li class="main-moto__li"> <button class="main-moto__btn">Automática</button> </li>
+                <li class="main-moto__li"> <button class="main-moto__btn">Gasolina</button> </li>
+                <li class="main-moto__li"> <button class="main-moto__btn">Diesel</button> </li>
             </ul>
-            <section>
-                <div>
-                    <img src="" alt="">
-                    <h3>Moto</h3>
-                    <div>
-                        <button>Eléctrica</button>
-                        <button>Automática</button>
+            <h2 class="main__h2">8 resultados de motos eléctricas automáticas</h2>
+            <section class="main__section">
+                <div class="main__cards card">
+                    <picture class="card__picture">
+                        <source class="card__source" media="(min-width: 1980px)" type="image/avif" srcset="src/assets/images/moto-1920.avif">
+                        <source class="card__source" media="(min-width: 1280px)" type="image/avif" srcset="src/assets/images/moto-1280.avif">
+                        <source class="card__source" type="image/avif" srcset="src/assets/images/moto-640.avif">
+                        <source class="card__source"  media="(min-width: 1980px)" type="image/webp" srcset="src/assets/images/moto-1920.webp">
+                        <source class="card__source" media="(min-width: 1280px)" type="image/webp" srcset="src/assets/images/moto-1280.webp">
+                        <source class="card__source" type="image/webp" srcset="src/assets/images/moto-640.webp">
+                        <source class="card__source" media="(min-width: 1980px)" type="image/jpeg" srcset="src/assets/images/moto-1920.jpg">
+                        <source class="card__source" media="(min-width: 1280px)" type="image/jpeg" srcset="src/assets/images/moto-1280.jpg">
+                        <img class="card__img"src="src/assets/images/moto-640.jpg" alt="Moto [model] imagen" loading="lazy">
+                    </picture>
+                    <h3 class="card__h3">Moto</h3>
+                    <div class="card__modelo">
+                        <button class="card__btn--electric">Eléctrica</button>
+                        <button class="card__btn--automatic">Automática</button>
                     </div>
-                    <div>
-                        <p> 
-                            <span role="img" aria-label="Descuento"></span>
+                    <div class="card__descuento">
+                        <p class="card__descuento--p"> 
+                            <span class="card__descuento--span" role="img" aria-label="Descuento"></span>
                             Desde 5.000€
                         </p>
-                        <a href="#">Ver detalles</a>
+                        <a class="card_detalles" href="#">Ver detalles</a>
                     </div>
-                    <button>Configurar esta moto</button>
+                    <button class="card__btn--configurar">Configurar esta moto</button>
                 </div>
             </section>
-            </div>
         </main>
-        <footer>
-            <section>
-                <h2>¿Quieres estar informado de las novedades?</h2>
-                <form>
-                    <div>
-                        <label for="subscribe">Email</label>
-                        <input id="subscribe" type="email" placeholder="nombre@gmail.com">
+        <footer class="footer">
+            <form class="footer__newsletter footer-newsletter">
+                <h2 class="footer-newsletter__h2">¿Quieres estar informado de las novedades?</h2>
+                <div class="footer-newsletter__fieldset">
+                    <div class="footer-newsletter__input-field">
+                        <label class="footer-newsletter__label" for="subscribe">Email</label>
+                        <input class="footer-newsletter__input" id="subscribe" type="email" placeholder="nombre@gmail.com">
                     </div>
-                    <button>Subscríbete</button>
-                </form>   
-            </section>
-            <nav>
-                <ul>
-                    <li> <a href="#">Contacto</a></li>
-                    <li> <a href="#">Política de Privacidad</a></li>
-                    <li> <a href="#">Política de Cookies</a></li>
-                    <li> <a href="#">Nota Legal</a></li>
-                    <li> <a href="#">Mapa de Sitio</a></li>
-                    <li> <a href="#">Accesibilidad</a></li>              
-                </ul>
+                    <button class="footer-newsletter__btn btn btn--black" type="submit">Subscríbete</button>
+                </div>
+            </form>   
+            <nav class="footer__nav footer-nav">
+                <a class="footer-nav__a" href="#">Contacto</a>
+                <a class="footer-nav__a" href="#">Política de Privacidad</a>
+                <a class="footer-nav__a" href="#">Política de Cookies</a>
+                <a class="footer-nav__a" href="#">Nota Legal</a>
+                <a class="footer-nav__a" href="#">Mapa de Sitio</a>
+                <a class="footer-nav__a" href="#">Accesibilidad</a>            
             </nav>
         </footer>
     </body>

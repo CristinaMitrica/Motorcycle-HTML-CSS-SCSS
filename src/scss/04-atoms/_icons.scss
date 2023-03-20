@@ -1,0 +1,33 @@
+// Base
+.icon {
+    @extend .icon--size-24; //default value
+    @extend .icon--color-primary; //default value
+
+    background-color: var(--icon-color);
+    height: var(--icon-size);
+    width: var(--icon-size);
+    display: block;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+// Size
+.icon--size-16 { --icon-size: #{pxToRem(16px)}; }
+.icon--size-24 { --icon-size: #{pxToRem(24px)}; }
+.icon--size-32 { --icon-size: #{pxToRem(32px)}; }
+
+// Color
+.icon--color-primary { --icon-color: var(--color-primary); }
+
+// Icons
+$icons: 
+    download,
+    export,
+;
+
+@each $icon in $icons {
+    .i--#{$icon} {
+        mask-image: url(../../src/assets/icons/#{$icon}.svg); 
+    }
+}

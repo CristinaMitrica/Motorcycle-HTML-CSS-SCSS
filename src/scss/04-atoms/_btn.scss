@@ -1,0 +1,9 @@
+.btn {
+    padding: var(--spacing-12);
+    border-radius: var(--border-radius-4);
+}
+
+.btn--black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}

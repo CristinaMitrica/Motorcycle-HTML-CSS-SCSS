@@ -1,0 +1,294 @@
+@charset "UTF-8";
+/* Variables */
+/* (Opcional) Las adaptamos al modo oscuro 
+@media (prefers-color-scheme: dark) {
+  :root{
+      --negro         : #ececec;
+  }
+}*/
+/* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+/* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* Reseteamos los margin y paddings de todas las etiquetas */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+*::before, *::after {
+  display: block;
+}
+
+/* Evitamos problemas con las imagenes */
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* (Opcional) */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* (Opcional) */
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* (Opcional) Configuramos anclas suaves */
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* (Opcional) Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: #393939;
+  color: var(--blanco);
+}
+::selection {
+  background-color: #393939;
+  color: var(--blanco);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* (Opcional) */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* Reseteamos las tablas */
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #393939;
+  /* (Opcional) */
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  /* (Opcional) */
+  font-smooth: always;
+  /* (Opcional) */
+  -webkit-font-smoothing: antialiased;
+  /* (Opcional) */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --color-white: #fff;
+  --color-low-grey: #f5f5f5;
+  --color-grey: #bfbfbf;
+  --color-blue: #1e24bd;
+  --color-black: #242221;
+  --color-strong-grey: #535151;
+  --color-red: #e00000;
+}
+
+:root {
+  --font-family: Arial, sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --font-size-head1: 2.375rem;
+  --font-size-head2: 1.75rem;
+  --font-size-head3: 1.5rem;
+  --font-size-body: 1rem;
+  --font-size-body-small: 0.875rem;
+}
+
+:root {
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+}
+
+:root {
+  --zindex-header: 200;
+}
+
+:root {
+  --border-radius-4: 4px;
+  --border-1: 1px;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: 100%;
+}
+
+body {
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-body);
+}
+
+h1 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-head1);
+}
+
+h2 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-head2);
+}
+
+h3 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-head3);
+}
+
+.body--small {
+  font-size: var(--font-size-body-small);
+}
+
+.icon {
+  background-color: var(--icon-color);
+  height: var(--icon-size);
+  width: var(--icon-size);
+  display: block;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+
+.icon--size-16 {
+  --icon-size: 1rem;
+}
+
+.icon--size-24, .icon {
+  --icon-size: 1.5rem;
+}
+
+.icon--size-32 {
+  --icon-size: 2rem;
+}
+
+.icon--color-primary, .icon {
+  --icon-color: var(--color-primary);
+}
+
+.i--download {
+  -webkit-mask-image: url(../../src/assets/icons/download.svg);
+          mask-image: url(../../src/assets/icons/download.svg);
+}
+
+.i--export {
+  -webkit-mask-image: url(../../src/assets/icons/export.svg);
+          mask-image: url(../../src/assets/icons/export.svg);
+}
+
+.btn {
+  padding: var(--spacing-12);
+  border-radius: var(--border-radius-4);
+}
+
+.btn--black {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+a {
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+input {
+  margin-top: var(--spacing-8);
+  background-color: var(--color-white);
+  border: var(--border-1) solid var(--color-black);
+  border-radius: var(--border-radius-4);
+  padding: var(--spacing-12);
+}
+
+::-moz-placeholder {
+  color: var(--color-black);
+}
+
+::placeholder {
+  color: var(--color-black);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__actions {
+  display: flex;
+  gap: var(--spacing-8);
+}
+
+.moto-results {
+  display: grid;
+  gap: var(--spacing-24);
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+}
+
+.hide-accesibility {
+  display: none;
+}/*# sourceMappingURL=app.css.map */

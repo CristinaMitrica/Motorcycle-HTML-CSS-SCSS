@@ -1,0 +1,29 @@
+html { 
+    font-family: var(--font-family); 
+    font-size: 100%; 
+}
+
+body {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-body);
+    //  font: normal #{pxToRem(16px)}/1.5 var(--font-family); 
+}
+
+h1 { 
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-head1);
+}
+
+h2 { 
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-head2);
+}
+
+h3 { 
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-head3);
+}
+
+.body--small {
+    font-size: var(--font-size-body-small);
+}

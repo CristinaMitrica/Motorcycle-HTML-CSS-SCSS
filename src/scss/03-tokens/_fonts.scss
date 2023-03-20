@@ -1,0 +1,12 @@
+:root {
+    --font-family: Arial, sans-serif;
+
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+
+    --font-size-head1: #{pxToRem(38px)};
+    --font-size-head2: #{pxToRem(28px)};
+    --font-size-head3: #{pxToRem(24px)};
+    --font-size-body: #{pxToRem(16px)};
+    --font-size-body-small: #{pxToRem(14px)};
+}

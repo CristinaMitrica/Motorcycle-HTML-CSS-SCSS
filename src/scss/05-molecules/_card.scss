@@ -1,0 +1,9 @@
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__actions {
+    display: flex;
+    gap: var(--spacing-8); 
+}
