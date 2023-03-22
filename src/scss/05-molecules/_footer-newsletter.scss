@@ -1,0 +1,39 @@
+.footer__newsletter {
+    padding-top: var(--spacing-64);
+    padding-bottom: var(--spacing-32);
+    padding-left: var(--spacing-32);
+    padding-right: var(--spacing-32);
+    display: flex;
+    flex-direction: column;
+    
+    @include breakpoint($break-large) {
+        align-items: center;
+    }
+}
+
+.footer-newsletter__fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-24);
+
+    @include breakpoint($break-large) {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+.footer-newsletter__input {
+    width: 100%;
+    
+    @include breakpoint($break-large) {
+        width: #{pxToRem(296px)};
+    }
+}
+
+.footer-newsletter__btn {
+    width: 100%;
+
+    @include breakpoint($break-large) {
+        width: auto;
+    }
+}

@@ -12,16 +12,19 @@ body {
 h1 { 
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-h1);
+    margin-bottom: var(--spacing-40);
 }
 
 h2 { 
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-h2);
+    margin-bottom: var(--spacing-32);
 }
 
 h3 { 
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-h3);
+    margin-bottom: var(--spacing-16);
 }
 
 .body--size-14 {
