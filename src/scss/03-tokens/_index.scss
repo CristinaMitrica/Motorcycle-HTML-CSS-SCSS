@@ -3,4 +3,14 @@
 @import 'fonts';
 @import 'spacings';
 @import 'zindexs';
-@import 'border';
+@import 'borders';
+@import 'sizings';
+
+:root {
+    @include colors;
+    @include fonts;
+    @include spacings;
+    @include zindexs;
+    @include borders;
+    @include sizings;
+}

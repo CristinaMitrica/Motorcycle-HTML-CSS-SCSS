@@ -3,30 +3,7 @@ html {
     font-size: 100%; 
 }
 
-body {
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-body-16);
-    //  font: normal #{pxToRem(16px)}/1.5 var(--font-family); 
-}
-
-h1 { 
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-h1);
-    margin-bottom: var(--spacing-40);
-}
-
-h2 { 
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-h2);
-    margin-bottom: var(--spacing-32);
-}
-
-h3 { 
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-h3);
-    margin-bottom: var(--spacing-16);
-}
-
-.body--size-14 {
-    font-size: var(--font-size-body-14);
-}
+body { font: var(--font-body); color: var(--color-black); }
+h1   { font: var(--font-h1); margin-bottom: var(--spacing-40); }
+h2   { font: var(--font-h2); margin-bottom: var(--spacing-32); }
+h3   { font: var(--font-h3); }

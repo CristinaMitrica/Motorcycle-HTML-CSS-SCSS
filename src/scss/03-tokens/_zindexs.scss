@@ -8,6 +8,6 @@ $zindex-7: 700;
 $zindex-8: 800;
 $zindex-9: 900;
 
-:root {
-    --zindex-header: #{$zindex-2};
+@mixin zindexs {
+    --zindex-header: #{$zindex-1};
 }

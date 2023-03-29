@@ -1,12 +1,12 @@
-:root {
+@mixin fonts {
     --font-family: Arial, sans-serif;
 
     --font-weight-bold: 700;
     --font-weight-normal: 400;
 
-    --font-size-h1: #{pxToRem(38px)};
-    --font-size-h2: #{pxToRem(28px)};
-    --font-size-h3: #{pxToRem(24px)};
-    --font-size-body-16: #{pxToRem(16px)};
-    --font-size-body-14: #{pxToRem(14px)};
+    --font-h1:         var(--font-weight-bold)   #{pxToRem(38px)}/1.5 var(--font-family);
+    --font-h2:         var(--font-weight-bold)   #{pxToRem(28px)}/1.5 var(--font-family); 
+    --font-h3:         var(--font-weight-bold)   #{pxToRem(24px)}/1.5 var(--font-family); 
+    --font-body:       var(--font-weight-normal) #{pxToRem(16px)}/1.5 var(--font-family); 
+    --font-body-small: var(--font-weight-normal) #{pxToRem(14px)}/1.5 var(--font-family); 
 }

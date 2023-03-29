@@ -4,74 +4,197 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Página inicio motorcicle</title>
+        <title>Página inicio Motorcycle</title>
         <link rel="stylesheet" href="src/scss/app.css">
     </head>
     <body>
         <header class="header">
-            <div class="header__logo header-logo">
-                <a class="header-logo__a" href="#" >
-                    <span class="header-logo__span" role="img" aria-label="Logo de motorcicle website"></span>
-                    <span class="header-logo__hide-accessibilit">Haz click para ir a la página de inicio</span>
-                </a> 
-            </div>
-            <ul class="header__navegacion header-navegacion">
-                <li class="header-navegacion__li header-motos"> 
-                    <a class="header-motos__a" href="#">Ver todas las motos</a> 
-                </li>
-                <li class="header-navegacion__li header-usuario"> 
-                    <button class="header-usuario__btn"> 
-                        <span class="header-usuario__span">
-                        </span> 
+            <a class="header__a" href="index.html" >
+                <span class="header__logo icon icon--moto-logo" role="img" aria-label="Logo de Motorcycle"></span>
+                <span class="hide-accesibility">Haz click para ir a la página de inicio</span>
+            </a>
+            <div class="header__nav">
+                <a class="header__link-all-motos btn btn--filled" href="#">Ver todas las motos</a> 
+                <button class="header__btn-user btn btn--text" type="button"> 
+                    <span class="header__span icon icon--user"></span> 
                     Usuario 
-                    </button>
-                </li>
-                <li class="header-navegacion__li header-menu"> 
-                    <button class="header-menu__btn">
-                        <span class="heder-menu__span" role="img" aria-label="Menú Hamburguesa"></span>
-                        <span class="header-menu__hide-accessibility">Haz click para abrir el menú hamburguesa</span>
-                        <!-- en css la clase hide-accessibility se pone display:none -->                      
-                    </button> 
-                </li>
-            </ul>
+                </button>
+                <button class="header__btn btn btn--text" type="button">
+                    <span class="header__span icon icon--burguer-menu" role="img" aria-label="Menú Hamburguesa"></span>
+                    <span class="hide-accesibility">Haz click para abrir el menú hamburguesa</span>
+                </button> 
+            </div>
         </header>
         <main class="main">
-            <h1 class="main__h1">Todas Las motos</h1>
-            <ul class="main__ul main-moto">
-                <li class="main-moto__li"> <button class="main-moto__btn">Eléctrica</button> </li>
-                <li class="main-moto__li"> <button class="main-moto__btn">Automática</button> </li>
-                <li class="main-moto__li"> <button class="main-moto__btn">Gasolina</button> </li>
-                <li class="main-moto__li"> <button class="main-moto__btn">Diesel</button> </li>
-            </ul>
-            <h2 class="main__h2">8 resultados de motos eléctricas automáticas</h2>
-            <section class="main__section">
-                <div class="main__cards card">
-                    <picture class="card__picture">
-                        <source class="card__source" media="(min-width: 1980px)" type="image/avif" srcset="src/assets/images/moto-1920.avif">
-                        <source class="card__source" media="(min-width: 1280px)" type="image/avif" srcset="src/assets/images/moto-1280.avif">
-                        <source class="card__source" type="image/avif" srcset="src/assets/images/moto-640.avif">
-                        <source class="card__source"  media="(min-width: 1980px)" type="image/webp" srcset="src/assets/images/moto-1920.webp">
-                        <source class="card__source" media="(min-width: 1280px)" type="image/webp" srcset="src/assets/images/moto-1280.webp">
-                        <source class="card__source" type="image/webp" srcset="src/assets/images/moto-640.webp">
-                        <source class="card__source" media="(min-width: 1980px)" type="image/jpeg" srcset="src/assets/images/moto-1920.jpg">
-                        <source class="card__source" media="(min-width: 1280px)" type="image/jpeg" srcset="src/assets/images/moto-1280.jpg">
-                        <img class="card__img"src="src/assets/images/moto-640.jpg" alt="Moto [model] imagen" loading="lazy">
-                    </picture>
-                    <h3 class="card__h3">Moto</h3>
-                    <div class="card__modelo">
-                        <button class="card__btn--electric">Eléctrica</button>
-                        <button class="card__btn--automatic">Automática</button>
-                    </div>
-                    <div class="card__descuento">
-                        <p class="card__descuento--p"> 
-                            <span class="card__descuento--span" role="img" aria-label="Descuento"></span>
-                            Desde 5.000€
-                        </p>
-                        <a class="card_detalles" href="#">Ver detalles</a>
-                    </div>
-                    <button class="card__btn--configurar">Configurar esta moto</button>
+            <div class="all-motos">
+                <h1 class="all-motos__h1">Todas las motos</h1>
+                <div class="all-motos__filters">
+                    <button class="all-motos__btn chip chip--selected">Eléctrica</button>
+                    <button class="all-motos__btn chip chip--selected">Automática</button>
+                    <button class="all-motos__btn chip chip--unselected">Gasolina</button>
+                    <button class="all-motos__btn chip chip--unselected">Diesel</button>
                 </div>
-            </section>
+                <h2 class="all-motos__h2">8 resultados de motos eléctricas automáticas</h2>
+                <div class="all-motos__cards">
+                    <div class="all-motos__card card">
+                        <picture class="card__picture">
+                            <source media="(min-width: 1980px)" type="image/avif" srcset="src/assets/images/moto-1920.avif">
+                            <source media="(min-width: 1280px)" type="image/avif" srcset="src/assets/images/moto-1280.avif">
+                            <source type="image/avif" srcset="src/assets/images/moto-640.avif">
+                            <source media="(min-width: 1980px)" type="image/webp" srcset="src/assets/images/moto-1920.webp">
+                            <source media="(min-width: 1280px)" type="image/webp" srcset="src/assets/images/moto-1280.webp">
+                            <source type="image/webp" srcset="src/assets/images/moto-640.webp">
+                            <source media="(min-width: 1980px)" type="image/jpeg" srcset="src/assets/images/moto-1920.jpg">
+                            <source media="(min-width: 1280px)" type="image/jpeg" srcset="src/assets/images/moto-1280.jpg">
+                            <img class="card__img" src="src/assets/images/moto-640.jpg" alt="Moto [model] imagen" loading="lazy">
+                        </picture>
+                        <h3 class="card__h3">Moto</h3>
+                        <div class="card__model">
+                            <div class="card__div chip chip--descriptor">Eléctrica</div>
+                            <div class="card__div chip chip--descriptor">Automática</div>
+                        </div>
+                        <div class="card__pricing">
+                            <p class="card__text-price card__text-price--discount"> 
+                                <span class="card__icon-discount icon icon--discount" role="img" aria-label="Descuento"></span>
+                                Desde 5.000€ 
+                                <span class="card__text-iva">&nbsp;(con IVA)</span>
+                            </p>
+                            <a class="card__a link" href="#">Ver detalles</a>
+                        </div>
+                        <button class="card__btn btn btn--filled">Configurar esta moto</button>
+                    </div>
+                    <div class="all-motos__card card">
+                        <picture class="card__picture">
+                            <source media="(min-width: 1980px)" type="image/avif" srcset="src/assets/images/moto-1920.avif">
+                            <source media="(min-width: 1280px)" type="image/avif" srcset="src/assets/images/moto-1280.avif">
+                            <source type="image/avif" srcset="src/assets/images/moto-640.avif">
+                            <source media="(min-width: 1980px)" type="image/webp" srcset="src/assets/images/moto-1920.webp">
+                            <source media="(min-width: 1280px)" type="image/webp" srcset="src/assets/images/moto-1280.webp">
+                            <source type="image/webp" srcset="src/assets/images/moto-640.webp">
+                            <source media="(min-width: 1980px)" type="image/jpeg" srcset="src/assets/images/moto-1920.jpg">
+                            <source media="(min-width: 1280px)" type="image/jpeg" srcset="src/assets/images/moto-1280.jpg">
+                            <img class="card__img" src="src/assets/images/moto-640.jpg" alt="Moto [model] imagen" loading="lazy">
+                        </picture>
+                        <h3 class="card__h3">Moto</h3>
+                        <div class="card__model">
+                            <div class="card__div chip chip--descriptor">Eléctrica</div>
+                            <div class="card__div chip chip--descriptor">Automática</div>
+                        </div>
+                        <div class="card__pricing">
+                            <p class="card__text-price"> 
+                                Desde 10.000€ 
+                                <span class="card__text-iva">&nbsp;(con IVA)</span>
+                            </p>
+                            <a class="card__a link" href="#">Ver detalles</a>
+                        </div>
+                        <button class="card__btn btn btn--filled">Configurar esta moto</button>
+                    </div>
+                    <div class="all-motos__card card">
+                        <picture class="card__picture">
+                            <source media="(min-width: 1980px)" type="image/avif" srcset="src/assets/images/moto-1920.avif">
+                            <source media="(min-width: 1280px)" type="image/avif" srcset="src/assets/images/moto-1280.avif">
+                            <source type="image/avif" srcset="src/assets/images/moto-640.avif">
+                            <source media="(min-width: 1980px)" type="image/webp" srcset="src/assets/images/moto-1920.webp">
+                            <source media="(min-width: 1280px)" type="image/webp" srcset="src/assets/images/moto-1280.webp">
+                            <source type="image/webp" srcset="src/assets/images/moto-640.webp">
+                            <source media="(min-width: 1980px)" type="image/jpeg" srcset="src/assets/images/moto-1920.jpg">
+                            <source media="(min-width: 1280px)" type="image/jpeg" srcset="src/assets/images/moto-1280.jpg">
+                            <img class="card__img" src="src/assets/images/moto-640.jpg" alt="Moto [model] imagen" loading="lazy">
+                        </picture>
+                        <h3 class="card__h3">Moto</h3>
+                        <div class="card__model">
+                            <div class="card__div chip chip--descriptor">Eléctrica</div>
+                            <div class="card__div chip chip--descriptor">Automática</div>
+                        </div>
+                        <div class="card__pricing">
+                            <p class="card__text-price"> 
+                                Desde 10.000€ 
+                                <span class="card__text-iva">&nbsp;(con IVA)</span>
+                            </p>
+                            <a class="card__a link" href="#">Ver detalles</a>
+                        </div>
+                        <button class="card__btn btn btn--filled">Configurar esta moto</button>
+                    </div>
+                    <div class="all-motos__card card">
+                        <picture class="card__picture">
+                            <source media="(min-width: 1980px)" type="image/avif" srcset="src/assets/images/moto-1920.avif">
+                            <source media="(min-width: 1280px)" type="image/avif" srcset="src/assets/images/moto-1280.avif">
+                            <source type="image/avif" srcset="src/assets/images/moto-640.avif">
+                            <source media="(min-width: 1980px)" type="image/webp" srcset="src/assets/images/moto-1920.webp">
+                            <source media="(min-width: 1280px)" type="image/webp" srcset="src/assets/images/moto-1280.webp">
+                            <source type="image/webp" srcset="src/assets/images/moto-640.webp">
+                            <source media="(min-width: 1980px)" type="image/jpeg" srcset="src/assets/images/moto-1920.jpg">
+                            <source media="(min-width: 1280px)" type="image/jpeg" srcset="src/assets/images/moto-1280.jpg">
+                            <img class="card__img" src="src/assets/images/moto-640.jpg" alt="Moto [model] imagen" loading="lazy">
+                        </picture>
+                        <h3 class="card__h3">Moto</h3>
+                        <div class="card__model">
+                            <div class="card__div chip chip--descriptor">Eléctrica</div>
+                            <div class="card__div chip chip--descriptor">Automática</div>
+                        </div>
+                        <div class="card__pricing">
+                            <p class="card__text-price"> 
+                                Desde 10.000€ 
+                                <span class="card__text-iva">&nbsp;(con IVA)</span>
+                            </p>
+                            <a class="card__a link" href="#">Ver detalles</a>
+                        </div>
+                        <button class="card__btn btn btn--filled">Configurar esta moto</button>
+                    </div>
+                    <div class="all-motos__card card">
+                        <picture class="card__picture">
+                            <source media="(min-width: 1980px)" type="image/avif" srcset="src/assets/images/moto-1920.avif">
+                            <source media="(min-width: 1280px)" type="image/avif" srcset="src/assets/images/moto-1280.avif">
+                            <source type="image/avif" srcset="src/assets/images/moto-640.avif">
+                            <source media="(min-width: 1980px)" type="image/webp" srcset="src/assets/images/moto-1920.webp">
+                            <source media="(min-width: 1280px)" type="image/webp" srcset="src/assets/images/moto-1280.webp">
+                            <source type="image/webp" srcset="src/assets/images/moto-640.webp">
+                            <source media="(min-width: 1980px)" type="image/jpeg" srcset="src/assets/images/moto-1920.jpg">
+                            <source media="(min-width: 1280px)" type="image/jpeg" srcset="src/assets/images/moto-1280.jpg">
+                            <img class="card__img" src="src/assets/images/moto-640.jpg" alt="Moto [model] imagen" loading="lazy">
+                        </picture>
+                        <h3 class="card__h3">Moto</h3>
+                        <div class="card__model">
+                            <div class="card__div chip chip--descriptor">Eléctrica</div>
+                            <div class="card__div chip chip--descriptor">Automática</div>
+                        </div>
+                        <div class="card__pricing">
+                            <p class="card__text-price"> 
+                                Desde 10.000€ 
+                                <span class="card__text-iva">&nbsp;(con IVA)</span>
+                            </p>
+                            <a class="card__a link" href="#">Ver detalles</a>
+                        </div>
+                        <button class="card__btn btn btn--filled">Configurar esta moto</button>
+                    </div>
+                    <div class="all-motos__card card">
+                        <picture class="card__picture">
+                            <source media="(min-width: 1980px)" type="image/avif" srcset="src/assets/images/moto-1920.avif">
+                            <source media="(min-width: 1280px)" type="image/avif" srcset="src/assets/images/moto-1280.avif">
+                            <source type="image/avif" srcset="src/assets/images/moto-640.avif">
+                            <source media="(min-width: 1980px)" type="image/webp" srcset="src/assets/images/moto-1920.webp">
+                            <source media="(min-width: 1280px)" type="image/webp" srcset="src/assets/images/moto-1280.webp">
+                            <source type="image/webp" srcset="src/assets/images/moto-640.webp">
+                            <source media="(min-width: 1980px)" type="image/jpeg" srcset="src/assets/images/moto-1920.jpg">
+                            <source media="(min-width: 1280px)" type="image/jpeg" srcset="src/assets/images/moto-1280.jpg">
+                            <img class="card__img" src="src/assets/images/moto-640.jpg" alt="Moto [model] imagen" loading="lazy">
+                        </picture>
+                        <h3 class="card__h3">Moto</h3>
+                        <div class="card__model">
+                            <div class="card__div chip chip--descriptor">Eléctrica</div>
+                            <div class="card__div chip chip--descriptor">Automática</div>
+                        </div>
+                        <div class="card__pricing">
+                            <p class="card__text-price"> 
+                                Desde 10.000€ 
+                                <span class="card__text-iva">&nbsp;(con IVA)</span>
+                            </p>
+                            <a class="card__a link" href="#">Ver detalles</a>
+                        </div>
+                        <button class="card__btn btn btn--filled">Configurar esta moto</button>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="footer">
             <form class="footer__newsletter footer-newsletter">
@@ -81,16 +204,16 @@
                         <label class="footer-newsletter__label" for="subscribe">Email</label>
                         <input class="footer-newsletter__input" id="subscribe" type="email" placeholder="nombre@gmail.com">
                     </div>
-                    <button class="footer-newsletter__btn btn btn--black" type="submit">Subscríbete</button>
+                    <button class="footer-newsletter__btn btn btn--filled" type="submit">Subscríbete</button>
                 </div>
             </form>
             <nav class="footer__nav footer-nav">
-                <a class="footer-nav__a" href="#">Contacto</a>
-                <a class="footer-nav__a" href="#">Política de Privacidad</a>
-                <a class="footer-nav__a" href="#">Política de Cookies</a>
-                <a class="footer-nav__a" href="#">Nota Legal</a>
-                <a class="footer-nav__a" href="#">Mapa de Sitio</a>
-                <a class="footer-nav__a" href="#">Accesibilidad</a>            
+                <a class="footer-nav__a link" href="#">Contacto</a>
+                <a class="footer-nav__a link" href="#">Política de Privacidad</a>
+                <a class="footer-nav__a link" href="#">Política de Cookies</a>
+                <a class="footer-nav__a link" href="#">Nota Legal</a>
+                <a class="footer-nav__a link" href="#">Mapa de Sitio</a>
+                <a class="footer-nav__a link" href="#">Accesibilidad</a>            
             </nav>
         </footer>
     </body>
