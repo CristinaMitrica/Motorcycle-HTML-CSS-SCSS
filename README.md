@@ -1,5 +1,5 @@
 # Motorcycle
-Primer proyecto **Frontend** en **HTML**, **CSS** y **SCSS** para la página web ficticia de Motorcycle.
+Proyecto **Frontend** en **HTML**, **CSS** y **SCSS** para la página web ficticia de Motorcycle.
 
 - **Herramientas**: Visual Studio Code, Figma, Chrome Dessarollador F12, Fork, W3School HTML Validator, Can I Use, Live SASS Compiler, Chat GTP. 
 
@@ -11,7 +11,7 @@ Implementación basada en un diseño de **Figma**. Los estilos de los componente
 ![web desktop](https://user-images.githubusercontent.com/124876049/228622267-ea062354-6d5d-45eb-b3b4-010f74fe229f.jpg)
 
 ## HTML
-**HTML** **semántico** usando las **buenas prácticas **de la **W3School** y la herramienta W3School Web Validator. Las clases se escriben bajo la la nomenclatura **BEM**, para facilizar la componetización y conseguir una baja especificidad.
+**HTML** **semántico** usando las **buenas prácticas** de la **W3School** y la herramienta W3School Web Validator. Las clases se escriben bajo la la nomenclatura **BEM**, para facilizar la componetización y conseguir una baja especificidad.
 
 ## CSS
 El CSS ha sido escrito utilizando el preprocesador **SCSS**.
@@ -32,6 +32,10 @@ Todo esto bajo una **arquitectura** **escalable** y legible basada en **Atomic D
 Durante el desarrollo del código en SCSS, se ha **validado que el código CSS resultante es el esperado**. Para ello, se han hecho revisiones del CSS compilado y se ha usado la herramienta CSS Specificity Graph Generator para validar la especificidad.
 
 ![specificity](https://user-images.githubusercontent.com/124876049/228622425-f06d8395-31a7-4a4f-8fb2-488d9de7a0f5.png)
+
+## Cursos
+- OpenBootcamp. Curso de HTML y CSS.
+- Udemy. Curso CSS La Guía Completa - Flexbox, CSS Grid, SASS +20 proyectos.
 
 ## Referencias
 - https://www.w3schools.com/
