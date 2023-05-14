@@ -42,11 +42,10 @@ Durante el desarrollo del código en SCSS, se ha **validado que el código CSS r
 - https://developer.mozilla.org/es/
 - https://sass-lang.com/
 - https://m3.material.io/
-- Atomic Design: 
-https://medium.com/geoblinktech/how-to-build-a-webpage-following-atomic-design-ed81669098cd
-- Accesibilidad: 
-https://www.youtube.com/watch?v=OkBIttAqCuo&ab_channel=Garajedeideas
-- Clases BEM: 
-https://www.youtube.com/watch?v=NucZM0GMRi4&list=PLJpymL0goBgEi9123aDkagpGpKkESbrsz&index=7&ab_channel=EduardoFierro
-- CSS Grid: 
-https://www.youtube.com/watch?v=El0OJ6h_2ZI&ab_channel=CodelyTV-Redescubrelaprogramaci%C3%B3n
+- https://css-tricks.com/snippets/css/complete-guide-grid/
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- Atomic Design: https://medium.com/geoblinktech/how-to-build-a-webpage-following-atomic-design-ed81669098cd
+- Accesibilidad: https://www.youtube.com/watch?v=OkBIttAqCuo&ab_channel=Garajedeideas
+- Ejemplos de HTML semático y accesible: https://www.w3.org/WAI/ARIA/apg/patterns/
+- Clases BEM: https://www.youtube.com/watch?v=NucZM0GMRi4&list=PLJpymL0goBgEi9123aDkagpGpKkESbrsz&index=7&ab_channel=EduardoFierro
+- CSS Grid: https://www.youtube.com/watch?v=El0OJ6h_2ZI&ab_channel=CodelyTV-Redescubrelaprogramaci%C3%B3n
