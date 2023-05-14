@@ -27,7 +27,7 @@ El código emplea las buenas prácticas de CSS y SCSS:
 
 Todo esto bajo una **arquitectura** **escalable** y legible basada en **Atomic Design**.
 
-![folders atomic design](https://user-images.githubusercontent.com/124876049/228622421-fffd5fba-48b5-4afb-930a-19505a233a52.png)
+![image](https://github.com/CristinaMitrica/proyecto-practica-html-css/assets/124876049/9a21d4a0-430f-45af-83b8-f96dad413bfe)
 
 Durante el desarrollo del código en SCSS, se ha **validado que el código CSS resultante es el esperado**. Para ello, se han hecho revisiones del CSS compilado y se ha usado la herramienta CSS Specificity Graph Generator para validar la especificidad.
 
