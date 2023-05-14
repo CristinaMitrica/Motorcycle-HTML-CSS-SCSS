@@ -383,16 +383,16 @@ input {
   margin-right: var(--spacing-12);
 }
 
-.card__text-price {
+.card__price {
   display: flex;
   align-items: center;
 }
 
-.card__text-price--discount {
+.card__price--discount {
   color: var(--color-red);
 }
 
-.card__text-iva {
+.card__iva {
   font: var(--font-body-small);
 }
 
@@ -450,6 +450,11 @@ input {
   }
 }
 
+.main {
+  margin-top: var(--header-height);
+  padding: var(--spacing-64) var(--spacing-32);
+}
+
 .all-motos__filters {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -471,11 +476,6 @@ input {
   .all-motos__cards {
     gap: var(--spacing-40);
   }
-}
-
-.main {
-  margin-top: var(--header-height);
-  padding: var(--spacing-64) var(--spacing-32);
 }
 
 .hide-accesibility {

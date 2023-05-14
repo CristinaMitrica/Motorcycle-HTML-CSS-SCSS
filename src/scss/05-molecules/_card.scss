@@ -25,15 +25,15 @@
     margin-right: var(--spacing-12);
 }
 
-.card__text-price {
+.card__price {
     display: flex;
     align-items: center;
 }
 
-.card__text-price--discount {
+.card__price--discount {
     color: var(--color-red);
 }
 
-.card__text-iva {
+.card__iva {
     font: var(--font-body-small);
 }
