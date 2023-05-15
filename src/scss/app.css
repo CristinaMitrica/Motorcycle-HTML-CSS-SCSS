@@ -160,8 +160,8 @@ body {
   --spacing-40: 2.5rem;
   --spacing-64: 4rem;
   --zindex-header: 100;
-  --border-radius-4: 4px;
-  --border-width-1: 1px;
+  --border-radius-4: 0.25rem;
+  --border-width-1: 0.0625rem;
   --input-and-btn-height: 2.75rem;
   --header-height: 4.5rem;
 }
