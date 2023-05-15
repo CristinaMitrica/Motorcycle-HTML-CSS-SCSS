@@ -191,7 +191,7 @@ h3 {
 }
 
 .icon {
-  --icon-size-18: 1rem;
+  --icon-size-16: 1rem;
   --icon-size-24: 1.5rem;
   --icon-size: var(--icon-size-24);
   --icon-color: var(--color-black);
