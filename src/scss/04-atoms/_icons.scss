@@ -8,6 +8,7 @@
     background-color: var(--icon-color);
     height: var(--icon-size);
     width: var(--icon-size);
+    min-width: var(--icon-size);
     display: inline-block;
     mask-size: contain;
     mask-repeat: no-repeat;

@@ -198,6 +198,7 @@ h3 {
   background-color: var(--icon-color);
   height: var(--icon-size);
   width: var(--icon-size);
+  min-width: var(--icon-size);
   display: inline-block;
   -webkit-mask-size: contain;
           mask-size: contain;
@@ -236,6 +237,7 @@ h3 {
   justify-content: center;
   height: var(--input-and-btn-height);
   border-radius: var(--border-radius-4);
+  gap: var(--spacing-12);
 }
 
 .btn--filled {
@@ -445,8 +447,6 @@ input {
 @media (min-width: 48rem) {
   .header__btn-user {
     display: flex;
-    align-items: center;
-    gap: var(--spacing-12);
   }
 }
 
