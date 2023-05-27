@@ -280,12 +280,12 @@ input {
   border-radius: var(--border-radius-4);
 }
 
-.chip--selected {
+.chip--btn--selected {
   background-color: var(--color-black);
   color: var(--color-white);
 }
 
-.chip--unselected {
+.chip--btn--unselected {
   background-color: var(--color-transparent);
   color: var(--color-black);
   border: var(--border-width-1) solid var(--color-black);
