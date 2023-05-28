@@ -385,16 +385,16 @@ input {
   margin-right: var(--spacing-12);
 }
 
-.card__price {
+.card__p-price {
   display: flex;
   align-items: center;
 }
 
-.card__price--discount {
+.card__p-price--discount {
   color: var(--color-red);
 }
 
-.card__iva {
+.card__p-iva {
   font: var(--font-body-small);
 }
 
