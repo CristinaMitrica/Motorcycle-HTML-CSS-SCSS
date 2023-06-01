@@ -1,8 +1,11 @@
-.footer__newsletter {
+.footer-newsletter {
     padding-top: var(--spacing-64);
     padding-bottom: var(--spacing-32);
     padding-left: var(--spacing-32);
     padding-right: var(--spacing-32);
+}
+
+.footer-newsletter__form {
     display: flex;
     flex-direction: column;
     
@@ -12,21 +15,12 @@
 }
 
 .footer-newsletter__fieldset {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: var(--spacing-24);
 
     @include breakpoint($break-large) {
-        flex-direction: row;
-        align-items: flex-end;
-    }
-}
-
-.footer-newsletter__input {
-    width: 100%;
-    
-    @include breakpoint($break-large) {
-        width: #{pxToRem(296px)};
+        grid-template-columns: #{pxToRem(240px)} auto;
+        align-items: end;
     }
 }
 

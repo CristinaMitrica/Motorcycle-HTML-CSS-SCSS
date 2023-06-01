@@ -145,12 +145,12 @@ body {
   --color-transparent: #00000000;
   --font-family: Arial, sans-serif;
   --font-weight-bold: 700;
-  --font-weight-normal: 400;
+  --font-weight-regular: 400;
   --font-h1: var(--font-weight-bold) 2.375rem/1.5 var(--font-family);
   --font-h2: var(--font-weight-bold) 1.75rem/1.5 var(--font-family);
   --font-h3: var(--font-weight-bold) 1.5rem/1.5 var(--font-family);
-  --font-body: var(--font-weight-normal) 1rem/1.5 var(--font-family);
-  --font-body-small: var(--font-weight-normal) 0.875rem/1.5 var(--font-family);
+  --font-body: var(--font-weight-regular) 1rem/1.5 var(--font-family);
+  --font-body-small: var(--font-weight-regular) 0.875rem/1.5 var(--font-family);
   --spacing-4: 0.25rem;
   --spacing-8: 0.5rem;
   --spacing-12: 0.75rem;
@@ -176,18 +176,22 @@ body {
   color: var(--color-black);
 }
 
-h1 {
+.font--h1 {
   font: var(--font-h1);
   margin-bottom: var(--spacing-40);
 }
 
-h2 {
+.font--h2 {
   font: var(--font-h2);
   margin-bottom: var(--spacing-32);
 }
 
-h3 {
+.font--h3 {
   font: var(--font-h3);
+}
+
+.font--body-small {
+  font: var(--font-body-small);
 }
 
 .icon {
@@ -259,7 +263,6 @@ h3 {
 }
 
 input {
-  margin-top: var(--spacing-8);
   background-color: var(--color-white);
   border: var(--border-width-1) solid var(--color-black);
   border-radius: var(--border-radius-4);
@@ -295,67 +298,8 @@ input {
   background-color: var(--color-low-grey);
 }
 
-.footer-nav {
+hr {
   border-top: var(--border-width-1) solid var(--color-grey);
-  padding-top: var(--spacing-24);
-  padding-bottom: var(--spacing-32);
-  padding-left: var(--spacing-32);
-  padding-right: var(--spacing-32);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-24);
-  align-items: flex-start;
-}
-@media (min-width: 62rem) {
-  .footer-nav {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.footer__newsletter {
-  padding-top: var(--spacing-64);
-  padding-bottom: var(--spacing-32);
-  padding-left: var(--spacing-32);
-  padding-right: var(--spacing-32);
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 62rem) {
-  .footer__newsletter {
-    align-items: center;
-  }
-}
-
-.footer-newsletter__fieldset {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-24);
-}
-@media (min-width: 62rem) {
-  .footer-newsletter__fieldset {
-    flex-direction: row;
-    align-items: flex-end;
-  }
-}
-
-.footer-newsletter__input {
-  width: 100%;
-}
-@media (min-width: 62rem) {
-  .footer-newsletter__input {
-    width: 18.5rem;
-  }
-}
-
-.footer-newsletter__btn {
-  width: 100%;
-}
-@media (min-width: 62rem) {
-  .footer-newsletter__btn {
-    width: auto;
-  }
 }
 
 .card {
@@ -394,12 +338,10 @@ input {
   color: var(--color-red);
 }
 
-.card__p-iva {
-  font: var(--font-body-small);
-}
-
-.footer {
-  background-color: var(--color-low-grey);
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
 }
 
 .header {
@@ -432,11 +374,11 @@ input {
   }
 }
 
-.header__link-all-motos {
+.header__a-all-motos {
   display: none;
 }
 @media (min-width: 30rem) {
-  .header__link-all-motos {
+  .header__a-all-motos {
     display: flex;
   }
 }
@@ -453,6 +395,65 @@ input {
 .main {
   margin-top: var(--header-height);
   padding: var(--spacing-64) var(--spacing-32);
+}
+
+.footer {
+  background-color: var(--color-low-grey);
+}
+
+.footer-nav {
+  padding-top: var(--spacing-24);
+  padding-bottom: var(--spacing-32);
+  padding-left: var(--spacing-32);
+  padding-right: var(--spacing-32);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24);
+  align-items: flex-start;
+}
+@media (min-width: 62rem) {
+  .footer-nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer-newsletter {
+  padding-top: var(--spacing-64);
+  padding-bottom: var(--spacing-32);
+  padding-left: var(--spacing-32);
+  padding-right: var(--spacing-32);
+}
+
+.footer-newsletter__form {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 62rem) {
+  .footer-newsletter__form {
+    align-items: center;
+  }
+}
+
+.footer-newsletter__fieldset {
+  display: grid;
+  gap: var(--spacing-24);
+}
+@media (min-width: 62rem) {
+  .footer-newsletter__fieldset {
+    grid-template-columns: 15rem auto;
+    align-items: end;
+  }
+}
+
+.footer-newsletter__btn {
+  width: 100%;
+}
+@media (min-width: 62rem) {
+  .footer-newsletter__btn {
+    width: auto;
+  }
 }
 
 .all-motos__filters {
