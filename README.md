@@ -32,7 +32,7 @@ Todo esto bajo una **arquitectura** **escalable** y legible basada en **Atomic D
 
 Durante el desarrollo del código en SCSS, se ha **validado que el código CSS resultante es el esperado**. Para ello, se han hecho revisiones del CSS compilado y se ha usado la herramienta **CSS Specificity Graph Generator** para validar la especificidad.
 
-![image](https://github.com/CristinaMitrica/Motorcycle-HTML-CSS-SCSS/assets/124876049/48ee12da-68d1-4cd9-995d-75fbbcbe3bbe)
+![specificity](https://user-images.githubusercontent.com/124876049/228622425-f06d8395-31a7-4a4f-8fb2-488d9de7a0f5.png)
 
 ## Cursos
 - OpenBootcamp. Curso de HTML y CSS.
