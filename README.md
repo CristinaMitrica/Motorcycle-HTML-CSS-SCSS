@@ -30,7 +30,7 @@ Todo esto bajo una **arquitectura** **escalable** y legible basada en **Atomic D
 
 ![image](https://github.com/CristinaMitrica/proyecto-practica-html-css/assets/124876049/9a21d4a0-430f-45af-83b8-f96dad413bfe)
 
-Durante el desarrollo del código en SCSS, se ha **validado que el código CSS resultante es el esperado**. Para ello, se han hecho revisiones del CSS compilado y se ha usado la herramienta CSS Specificity Graph Generator para validar la especificidad.
+Durante el desarrollo del código en SCSS, se ha **validado que el código CSS resultante es el esperado**. Para ello, se han hecho revisiones del CSS compilado y se ha usado la herramienta **CSS Specificity Graph Generator** para validar la especificidad.
 
 ![specificity](https://user-images.githubusercontent.com/124876049/228622425-f06d8395-31a7-4a4f-8fb2-488d9de7a0f5.png)
 
