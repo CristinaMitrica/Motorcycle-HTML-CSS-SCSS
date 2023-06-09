@@ -28,7 +28,7 @@ El código emplea las buenas prácticas de CSS y SCSS:
 
 Todo esto bajo una **arquitectura** **escalable** y legible basada en **Atomic Design**. Esta metodología me ha permitido desarrollar un **Design System**. 
 
-![image](https://github.com/CristinaMitrica/proyecto-practica-html-css/assets/124876049/9a21d4a0-430f-45af-83b8-f96dad413bfe)
+![atomicDesign](https://github.com/CristinaMitrica/Motorcycle-HTML-CSS-SCSS/assets/124876049/0e3e96da-3733-4f2b-a247-6ed0b65e38e1)
 
 Durante el desarrollo del código en SCSS, se ha **validado que el código CSS resultante es el esperado**. Para ello, se han hecho revisiones del CSS compilado y se ha usado la herramienta **CSS Specificity Graph Generator** para validar la especificidad.
 
