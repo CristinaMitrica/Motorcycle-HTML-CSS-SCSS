@@ -163,7 +163,6 @@ body {
   --border-radius-4: 0.25rem;
   --border-width-1: 0.0625rem;
   --input-and-btn-height: 2.75rem;
-  --header-height: 4.5rem;
 }
 
 html {
@@ -345,12 +344,11 @@ hr {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: var(--zindex-header);
-  height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -393,7 +391,6 @@ hr {
 }
 
 main {
-  margin-top: var(--header-height);
   padding: var(--spacing-64) var(--spacing-32);
 }
 
