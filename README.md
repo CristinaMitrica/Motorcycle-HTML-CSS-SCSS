@@ -34,11 +34,11 @@ Durante el desarrollo del código en SCSS, se ha **validado que el código CSS r
 
 ![specificity](https://user-images.githubusercontent.com/124876049/228622425-f06d8395-31a7-4a4f-8fb2-488d9de7a0f5.png)
 
-## Cursos
+## Formación
 - OpenBootcamp. Curso de HTML y CSS.
 - Udemy. Curso CSS La Guía Completa - Flexbox, CSS Grid, SASS +20 proyectos.
 
-## Referencias
+## Recursos
 - https://www.w3schools.com/
 - https://developer.mozilla.org/es/
 - https://sass-lang.com/
