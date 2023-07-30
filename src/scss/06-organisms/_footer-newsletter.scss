@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     
-    @include breakpoint($break-large) {
+    @include breakpoint($break-992) {
         align-items: center;
     }
 }
@@ -18,7 +18,7 @@
     display: grid;
     gap: var(--spacing-24);
 
-    @include breakpoint($break-large) {
+    @include breakpoint($break-992) {
         grid-template-columns: #{pxToRem(240px)} auto;
         align-items: end;
     }
@@ -27,7 +27,7 @@
 .footer-newsletter__btn {
     width: 100%;
 
-    @include breakpoint($break-large) {
+    @include breakpoint($break-992) {
         width: auto;
     }
 }

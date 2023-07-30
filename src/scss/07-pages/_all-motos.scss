@@ -4,7 +4,7 @@
     gap: var(--spacing-16);
     margin-bottom: var(--spacing-32);
 
-    @include breakpoint($break-small) {
+    @include breakpoint($break-480) {
         display: flex;
     }
 }
@@ -14,7 +14,7 @@
     gap: var(--spacing-32);
     grid-template-columns: repeat(auto-fill, minmax(pxToRem(340px), 1fr));
 
-    @include breakpoint($break-medium) {
+    @include breakpoint($break-768) {
         gap: var(--spacing-40);
     }
 }

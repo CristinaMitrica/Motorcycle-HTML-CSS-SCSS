@@ -21,7 +21,7 @@
     align-items: center;
     gap: var(--spacing-24);
 
-    @include breakpoint($break-medium) {
+    @include breakpoint($break-768) {
         gap: var(--spacing-32);
     }
 }
@@ -29,7 +29,7 @@
 .header__a-all-motos {
     display: none;
 
-    @include breakpoint($break-small) {
+    @include breakpoint($break-480) {
         display: flex;
     }
 }
@@ -37,7 +37,7 @@
 .header__btn-user {
     display: none;
 
-    @include breakpoint($break-medium) {
+    @include breakpoint($break-768) {
         display: flex;
     }
 }
